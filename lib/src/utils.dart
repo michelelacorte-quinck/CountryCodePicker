@@ -4,7 +4,7 @@ import '../country_code_picker.dart';
 
 class Utils {
   static void showStaticDialog(BuildContext context,
-      Function(CountryCode) onChanged) async {
+      Function(CountryCode?) onChanged) async {
     List<Map<String, String>> jsonList = codes;
 
     List<CountryCode> elements =
