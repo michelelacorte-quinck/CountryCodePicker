@@ -106,18 +106,6 @@ class MyAppState extends State<MyApp> {
                 initialSelection: 'IT',
                 favorite: const ['+39', 'FR'],
                 countryFilter: const ['IT', 'FR'],
-                showFlagDialog: false,
-                comparator: (a, b) => b.name.compareTo(a.name),
-                //Get the country information relevant to the initial selection
-                onInit: (code) => debugPrint(
-                    "on init ${code.name} ${code.dialCode} ${code.name}"),
-              ),
-              CountryCodePicker(
-                onChanged: print,
-                // Initial selection and favorite can be one of code ('IT') OR dial_code('+39')
-                initialSelection: 'IT',
-                favorite: const ['+39', 'FR'],
-                countryFilter: const ['IT', 'FR'],
                 // flag can be styled with BoxDecoration's `borderRadius` and `shape` fields
                 flagDecoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(7),
