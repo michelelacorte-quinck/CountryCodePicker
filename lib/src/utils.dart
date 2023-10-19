@@ -1,3 +1,5 @@
+library country_code_picker;
+
 import 'package:flutter/material.dart';
 
 import '../country_code_picker.dart';
