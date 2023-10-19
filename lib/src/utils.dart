@@ -14,14 +14,13 @@ class Utils {
       barrierColor: Colors.grey.withOpacity(0.5),
       context: context,
       builder: (context) =>
-          Center(
-            child: Dialog(
-              child: SelectionDialog(
-                elements,
-                [],
-                showCountryOnly: false,
-                showFlag: true,
-              ),
+          Dialog(
+            child: SelectionDialog(
+              elements,
+              [],
+              showCountryOnly: false,
+              showFlag: true,
+              closeIcon: const Icon(Icons.close),
             ),
           ),
     );
