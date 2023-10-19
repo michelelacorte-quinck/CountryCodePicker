@@ -11,7 +11,6 @@ class Utils {
     jsonList.map((json) => CountryCode.fromJson(json)).toList();
 
     final item = await showDialog(
-      barrierColor: Colors.grey.withOpacity(0.5),
       context: context,
       builder: (context) =>
           Dialog(
