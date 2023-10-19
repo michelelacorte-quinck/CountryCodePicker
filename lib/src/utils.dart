@@ -1,11 +1,9 @@
-library country_code_picker;
-
 import 'package:flutter/material.dart';
 
 import '../country_code_picker.dart';
 
 class Utils {
-  void showStaticDialog(BuildContext context,
+  static void showStaticDialog(BuildContext context,
       Function(CountryCode) onChanged) async {
     List<Map<String, String>> jsonList = codes;
 
