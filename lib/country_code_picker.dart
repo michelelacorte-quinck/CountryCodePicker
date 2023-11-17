@@ -4,7 +4,7 @@ import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 
 import 'src/country_code.dart';
-import 'src/country_codes_old.dart';
+import 'src/country_codes.dart';
 import 'src/selection_dialog.dart';
 
 export 'src/utils.dart';
