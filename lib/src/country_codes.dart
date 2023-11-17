@@ -105,7 +105,7 @@ const List<Map<String, String>> codes = [
     "name": "Italia",
     "code": "IT",
     "dial_code": "+39",
-    "nationality": "Italiano"
+    "nationality": "Italiana"
   },
   {
     "name": "Latvija",
