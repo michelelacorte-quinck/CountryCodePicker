@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/cupertino.dart';
 
-import 'country_codes.dart';
+import 'country_codes_old.dart';
 import 'country_localizations.dart';
 
 mixin ToAlias {}
@@ -20,11 +20,14 @@ class CountryCode {
   /// the dial code (+39,+93..)
   final String? dialCode;
 
+  final String? nationality;
+
   CountryCode({
     this.name,
     this.flagUri,
     this.code,
     this.dialCode,
+    this.nationality,
   });
 
   @Deprecated('Use `fromCountryCode` instead.')
@@ -57,6 +60,7 @@ class CountryCode {
       code: json['code'],
       dialCode: json['dial_code'],
       flagUri: 'flags/${json['code'].toLowerCase()}.png',
+      nationality: json['nationality'],
     );
   }
 
